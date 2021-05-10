@@ -1,19 +1,21 @@
 language: python
 python:
-  - "2.7"
-  - "3.6"
-
+  - "3.9"
+os:
+  - linux
+git:
+  depth: 1
 env:
   - PLATFORMIO_PROJECT_DIR=examples/arduino-blink
-  - PLATFORMIO_PROJECT_DIR=examples/arduino-wire/master_reader
-  - PLATFORMIO_PROJECT_DIR=examples/arduino-wire/master_writer
-  - PLATFORMIO_PROJECT_DIR=examples/arduino-wire/slave_receiver
-  - PLATFORMIO_PROJECT_DIR=examples/arduino-wire/slave_sender
-  - PLATFORMIO_PROJECT_DIR=examples/device-control/DieTemperatureMeasurement
-  - PLATFORMIO_PROJECT_DIR=examples/device-control/HeapMemoryMeasurement
-  - PLATFORMIO_PROJECT_DIR=examples/device-control/SleepModeXMC1100
-  - PLATFORMIO_PROJECT_DIR=examples/device-control/SleepModeXMC4700
-  - PLATFORMIO_PROJECT_DIR=examples/device-control/StackMemoryMeasurement
+  - PLATFORMIO_PROJECT_DIR=examples/master_reader
+  - PLATFORMIO_PROJECT_DIR=examples/master_writer
+  - PLATFORMIO_PROJECT_DIR=examples/slave_receiver
+  - PLATFORMIO_PROJECT_DIR=examples/slave_sender
+  - PLATFORMIO_PROJECT_DIR=examples/DieTemperatureMeasurement
+  - PLATFORMIO_PROJECT_DIR=examples/HeapMemoryMeasurement
+  - PLATFORMIO_PROJECT_DIR=examples/SleepModeXMC1100
+  - PLATFORMIO_PROJECT_DIR=examples/SleepModeXMC4700
+  - PLATFORMIO_PROJECT_DIR=examples/StackMemoryMeasurement
   - PLATFORMIO_PROJECT_DIR=examples/ifx9201/MotorControl
   - PLATFORMIO_PROJECT_DIR=examples/rtc/AlarmRTC
   - PLATFORMIO_PROJECT_DIR=examples/rtc/HibernateRTCAlarm
