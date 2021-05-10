@@ -1,0 +1,39 @@
+{
+  "name": "P245",
+  "title": "Infineon XMC MCU",
+  "description": "Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The XMC microcontrollers can be integrated with the Arduino platform",
+  "homepage": "https://www.infineon.com",
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OS-Q/P245.git"
+  },
+  "version": "1.1.5",
+  "frameworks": {
+    "arduino": {
+      "package": "framework-arduinoxmc",
+      "script": "extend/frameworks/arduino.py"
+    }
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": ">=1.60301.0,<1.80000.0"
+    },
+    "framework-arduinoxmc": {
+      "type": "framework",
+      "owner": "platformio",
+      "version": "^1.4.0",
+      "optional": true
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.63208.0"
+    }
+  }
+}
